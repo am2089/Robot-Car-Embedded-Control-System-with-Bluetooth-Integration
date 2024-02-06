@@ -29,11 +29,12 @@ when I ran into a bug.
 reducing the complexity of my code, and checking that the motor is outputting enough power. There is still room for improvement. 
 
 # How to Use the Project:
-So for the iOS App it is pretty straight forward. The only thing I would look out for is making sure you have enabled the permissions in your
-project Plist so it can run properly. Also when You do have the app running you will see a space between the directional pad and connection button
-I left that space open to eventually add a camera or some other features.
+1. So for the iOS App it is pretty straight forward. The only thing I would look out for is making sure you have enabled the permissions in your
+project Plist so it can run properly.
 
-Obviously with the Robot itself your going to need a basic understanding of how the hardware works and learn the fundamentals of electronics. Depending on 
+2. Make sure you generate your own UUIDs for the services and characteristics. There are generators online where you can get them.
+
+3. Obviously with the Robot itself your going to need a basic understanding of how the hardware works and learn the fundamentals of electronics. Depending on 
 the micro controller you use is how you would set up the connection for the Arduino. I used a Arduino Nano ESP32 which had built in wifi and Bluetooth
 capabilities, but you can use a bluetooth module which shouldn't be so different in terms of code setup.
 
