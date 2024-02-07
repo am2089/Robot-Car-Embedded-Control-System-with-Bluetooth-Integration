@@ -12,7 +12,7 @@ for the app.
 
 
 # Challenges and Solutions:
-Being the first time I was working with both technologies I ran into a number of issues:
+Being the first time I was working with the Bluetooth Framework I ran into a number of issues:
 
 1. _Voltage_: Making sure my car had the right voltage power to turn the two gears. I learned that voltage drops when the motor is on
 so I had to acommodate for that.
