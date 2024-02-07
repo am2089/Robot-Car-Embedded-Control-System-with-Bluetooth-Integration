@@ -29,7 +29,7 @@ when I ran into a bug.
 reducing the complexity of my code, and checking that the motor is outputting enough power. There is still room for improvement. 
 
 # How to Use the Project:
-1. So for the iOS App it is pretty straight forward. The only thing I would look out for is making sure you have enabled the permissions in your
+1. So for the iOS App it is pretty straight forward. The only thing I would look out for is making sure you have enabled the Bluetooth permissions in your
 project Plist so it can run properly.
 
 2. Make sure you generate your own UUIDs for the services and characteristics. There are generators online where you can get them.
