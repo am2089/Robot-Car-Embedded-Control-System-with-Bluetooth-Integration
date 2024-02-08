@@ -1,6 +1,3 @@
-# Title: 
-Bluetooth Controlled Arduino Robot
-
 # Project Description:
 This project was my first with combing software and hardware. I decided I wanted to merge my new found Arduino skills with my 
 iOS development knowledge to bring the two together. My interest in iOT helped me come up with this idea. I built a iOS App 
