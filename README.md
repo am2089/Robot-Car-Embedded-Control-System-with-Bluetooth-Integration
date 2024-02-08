@@ -2,11 +2,10 @@
 Bluetooth Controlled Arduino Robot
 
 # Project Description:
-After learning the fundamentals of Arduino development and hardware I built a two gear robot car. 
-I decided I wanted to merge my new found skills with my iOS development knowledge to bring the two together. 
-My interest in iOT helped me come up with this idea. I built a iOS App that acts as a controller which connects to 
-the car via Bluetooth. I used the ArduinoBLE libraries to setup the connection on the Arduino side, and Core Bluetooth framework
-for the app.
+This project was my first with combing software and hardware. I decided I wanted to merge my new found Arduino skills with my 
+iOS development knowledge to bring the two together. My interest in iOT helped me come up with this idea. I built a iOS App 
+that acts as a controller which connects to the car via Bluetooth. I used the ArduinoBLE libraries to setup the connection on 
+the Arduino side, and Core Bluetooth framework for the app.
 
 ![IMG_0174](https://github.com/am2089/Bluetooth-Controlled-Arduino-Robot/assets/63330690/2f8e0cf6-42ff-4270-916f-d8eb5d58c1d7)
 
