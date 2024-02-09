@@ -21,8 +21,9 @@ great language to learn in general. Another problem I had was figuring out where
 I greatly implemented error handling to both Arduino and my iOS app which helped me eventually piece things together and find a solution
 when I ran into a bug.
 
-4. _Latency_: There is a small delay I am currently working on the improve response time between the controller and robot. I have reduced it by a bit
-reducing the complexity of my code, and checking that the motor is outputting enough power. There is still room for improvement. 
+4. _Latency_: I was able to reduce the latency I was having by 41% (0.61s to 0.36s) by looking at both the Arduino and iOS side and optimizing the data handling
+as well and eliminating any bottlenecks such as redundent code. I ran about 15 command response timed test and then ran them again to compare with the changes I
+made in the code.
 
 # How to Use the Project:
 1. So for the iOS App it is pretty straight forward. The only thing I would look out for is making sure you have enabled the Bluetooth permissions in your
