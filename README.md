@@ -1,5 +1,5 @@
 # Project Description:
-This project was my first with combing software and hardware. I decided I wanted to merge my new found Arduino skills with my 
+This project was my first with creating an App for a physical device. I decided I wanted to merge my new found Arduino skills with my 
 iOS development knowledge to bring the two together. My interest in iOT helped me come up with this idea. I built a iOS App 
 that acts as a controller which connects to the car via Bluetooth. I used the ArduinoBLE libraries to setup the connection on 
 the Arduino side, and Core Bluetooth framework for the app.
