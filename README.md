@@ -40,8 +40,8 @@ So I am leaving this project public so other iOS developers can use it as a jump
 I also want to learn from the community. Maybe we can all together build a little super car.
 
 Robot Car in action with App:
-
-https://github.com/am2089/Bluetooth-Controlled-Arduino-Robot/assets/63330690/c9e44242-4f80-4bce-a9a7-d313dd6e8e9b
+[
+](https://youtube.com/shorts/nL0a-RCpjPM?feature=share)https://youtube.com/shorts/nL0a-RCpjPM?feature=share
 
 
 
