@@ -1,77 +1,66 @@
-A Bluetooth-controlled robot car powered by an ESP32 and a custom-built iOS app. This project combines embedded development and mobile app design to create a responsive real-time system for controlling a physical device.
 
-![302458991-2f8e0cf6-42ff-4270-916f-d8eb5d58c1d7](https://github.com/user-attachments/assets/f717e102-186b-4ccb-92d8-77b60d2f87ac)
+# 🚗 BLE-Controlled Robot Car | Embedded Systems + iOS
 
-📱 Overview
-This project was my first time integrating hardware with an iOS app using Bluetooth. As someone transitioning from iOS development to embedded systems engineering, I wanted to merge the two worlds and explore IoT. The iOS app acts as a remote controller, sending directional commands (forward, backward, left, right, stop) to the ESP32-based robot via BLE (Bluetooth Low Energy).
+A real-time robot car controller built with an ESP32 and a custom Swift-based iOS app. This project bridges embedded systems engineering with mobile development and demonstrates my ability to build and optimize a full-stack hardware-software solution.
 
-🛠️ Features
-✅ Bluetooth Low Energy (BLE) communication between ESP32 and iOS
+---
 
-✅ Real-time control: forward, backward, left, right, stop
+## 👨‍💻 Project Overview
 
-✅ Reduced BLE latency by 41% (from 0.61s → 0.36s) through iterative testing and optimization
+This was my first embedded project integrating hardware and software via Bluetooth Low Energy (BLE). I built an iOS app that connects to an ESP32-powered robot car, enabling directional control through a clean, mobile interface.
 
-✅ Clean separation between embedded and app layers for easier debugging
+The goal was to explore real-time systems, embedded communication, and performance tuning — and to challenge myself by going beyond just app development into system-level thinking.
 
-🧠 Challenges & Solutions
-⚡ Voltage Drop
-Initially, the motors weren’t receiving enough power under load. I learned that motors draw more current when active, which causes a voltage drop. I adjusted the power supply to accommodate these real-world electrical behaviors.
+---
 
-🐛 Code & Connection Bugs
-Working in C for the first time and troubleshooting BLE connection bugs pushed me to implement proper error handling on both the ESP32 and iOS sides. This helped isolate issues and improve stability.
+## 💡 Key Highlights for Recruiters
 
-⏱️ Latency Optimization
-I ran 15 timed tests measuring response time from iOS tap to motor movement. After analyzing the BLE characteristic behavior and removing redundant code, I reduced latency by 41%. This included tuning BLE preferences and optimizing characteristic handling.
+| Skill | Demonstrated |
+|------|--------------|
+| **Embedded C/C++** | Programmed ESP32 for real-time BLE handling and motor control |
+| **Bluetooth Low Energy (BLE)** | Integrated CoreBluetooth in iOS and handled GATT services on the ESP32 |
+| **Latency Optimization** | Reduced BLE response time by **41%** through testing and code refactoring |
+| **Testing Methodology** | Designed and ran **15+ response-time tests** to quantify improvements |
+| **iOS App Development** | Built full-featured companion app with Swift + CoreBluetooth |
+| **Debugging** | Solved power, timing, and BLE connectivity issues across two platforms |
 
-🔧 Getting Started
-Hardware Required
-ESP32 (with built-in BLE)
+---
 
-Motor driver (e.g., L298N)
+## 🛠️ Challenges I Solved
 
-DC motors + chassis
+- **Power Issues:** Motors caused voltage drops. I analyzed the hardware behavior and adjusted my power supply to maintain stable output under load.
+- **Cross-Platform Bugs:** BLE communication bugs were hard to trace. I implemented better error logging and handling on both the ESP32 and iOS side to debug mismatches and ensure reliable communication.
+- **Latency:** I ran 15 command-response timing tests and made changes on both firmware and app side — including BLE interval tuning and removing redundant logic — to bring response time down from **0.61s to 0.36s**.
 
-Battery pack (capable of handling motor current draw)
+---
 
-Jumper wires
+## 🧪 Testing & Optimization
 
-Optional: logic analyzer or multimeter
+This project wasn’t just about making it “work” — I wanted it to be **responsive** and **reliable**. I treated latency like a real-world performance bug:
+- Measured delay with manual stopwatch tests
+- Tuned BLE characteristic settings
+- Refactored command parsing and state handling
 
-Software Requirements
-Arduino IDE (or PlatformIO)
+---
 
-Xcode (for iOS app)
+## 🧰 Tech Stack
 
-BLE UUID generator (for custom service/characteristic UUIDs)
+- **Hardware:** ESP32, L298N Motor Driver, DC motors, battery pack
+- **Embedded Software:** C/C++ (Arduino core), BLE GATT server
+- **Mobile App:** Swift, CoreBluetooth
+- **Testing:** Manual response-time testing, Serial logging
 
-📲 How to Use
-Clone or download this repository.
+---
 
-Update the UUIDs in both the ESP32 code and the iOS app using your own (you can generate new ones here).
+## 🎥 Demo
 
-Enable Bluetooth permissions in the iOS app's Info.plist.
+▶️ [Watch the robot car in action](https://youtube.com/shorts/nL0a-RCpjPM?feature=share)
 
-Upload the Arduino code to your ESP32.
+---
 
-Connect the app to the device, and start driving!
+## 🤝 Open to Collaboration
 
-🧩 Project Architecture
-plaintext
-Copy
-Edit
-[ iOS App (Swift + CoreBluetooth) ]
-              ⇅
-[ BLE Communication Layer ]
-              ⇅
-[ ESP32 (C/C++) ] --> [ Motor Driver ] --> [ Motors ]
-🤝 Open Source Contribution
-This project is open to the community. iOS devs and embedded enthusiasts alike are welcome to fork, remix, or contribute improvements. Whether you're learning, teaching, or building a supercar — I hope this serves as a solid starting point.
-
-🎥 Demo
-▶️ Watch the Robot Car in Action
-(https://youtube.com/shorts/nL0a-RCpjPM?feature=share)https://youtube.com/shorts/nL0a-RCpjPM?feature=share
-
+This project is open source and available for iOS devs
 
 
 
