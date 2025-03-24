@@ -93,4 +93,3 @@ This project is open source for anyone learning embedded development, Bluetooth 
 
 **Andrew Muniz**  
 📧 andrewjosephmuniz@gmail.com  
-🌐 [](https://www.linkedin.com/in/andrewjosephmuniz/)
