@@ -1,66 +1,96 @@
 
-# 🚗 BLE-Controlled Robot Car | Embedded Systems + iOS
+# 🚗 BLE-Controlled Robot Car | ESP32 + iOS App
 
-A real-time robot car controller built with an ESP32 and a custom Swift-based iOS app. This project bridges embedded systems engineering with mobile development and demonstrates my ability to build and optimize a full-stack hardware-software solution.
-
----
-
-## 👨‍💻 Project Overview
-
-This was my first embedded project integrating hardware and software via Bluetooth Low Energy (BLE). I built an iOS app that connects to an ESP32-powered robot car, enabling directional control through a clean, mobile interface.
-
-The goal was to explore real-time systems, embedded communication, and performance tuning — and to challenge myself by going beyond just app development into system-level thinking.
+This project connects a robot car powered by an ESP32 microcontroller to a custom iOS app via Bluetooth Low Energy (BLE). It demonstrates real-time embedded control, BLE communication, and cross-platform system integration between mobile and hardware.
 
 ---
 
-## 💡 Key Highlights for Recruiters
+## 📱 Project Overview
 
-| Skill | Demonstrated |
-|------|--------------|
-| **Embedded C/C++** | Programmed ESP32 for real-time BLE handling and motor control |
-| **Bluetooth Low Energy (BLE)** | Integrated CoreBluetooth in iOS and handled GATT services on the ESP32 |
-| **Latency Optimization** | Reduced BLE response time by **41%** through testing and code refactoring |
-| **Testing Methodology** | Designed and ran **15+ response-time tests** to quantify improvements |
-| **iOS App Development** | Built full-featured companion app with Swift + CoreBluetooth |
-| **Debugging** | Solved power, timing, and BLE connectivity issues across two platforms |
+This was my first full integration of embedded systems and mobile development. The iOS app sends directional commands (forward, backward, left, right, stop) to the ESP32, which controls the car’s motors using GPIO pins and a motor driver. The goal was to explore real-time responsiveness, wireless control, and performance tuning.
 
 ---
 
-## 🛠️ Challenges I Solved
+## 💡 Key Highlights
 
-- **Power Issues:** Motors caused voltage drops. I analyzed the hardware behavior and adjusted my power supply to maintain stable output under load.
-- **Cross-Platform Bugs:** BLE communication bugs were hard to trace. I implemented better error logging and handling on both the ESP32 and iOS side to debug mismatches and ensure reliable communication.
-- **Latency:** I ran 15 command-response timing tests and made changes on both firmware and app side — including BLE interval tuning and removing redundant logic — to bring response time down from **0.61s to 0.36s**.
+| Area | Description |
+|------|-------------|
+| **Embedded C/C++** | Programmed the ESP32 to handle BLE connections and motor control logic |
+| **BLE Communication** | Built a GATT server on the ESP32 and used CoreBluetooth on iOS to connect |
+| **Latency Testing** | Reduced command response latency by **41%** (0.61s → 0.36s) using iterative optimization |
+| **Debugging** | Implemented cross-platform error handling and tested over 15 command-response cycles |
+| **iOS App** | Designed a clean Swift-based app to send BLE commands and handle connection states |
+
+---
+
+## 🛠️ Challenges & Solutions
+
+- **Voltage Drop:** The motors drew more current than expected. I analyzed the power behavior and adjusted the battery setup to stabilize performance.
+- **BLE Stability:** Initial connection issues were resolved by improving error handling and logging on both the ESP32 and iOS sides.
+- **Responsiveness:** I ran manual timed tests (15+ iterations), identified code bottlenecks, and optimized both BLE settings and app-side logic to reduce latency.
 
 ---
 
 ## 🧪 Testing & Optimization
 
-This project wasn’t just about making it “work” — I wanted it to be **responsive** and **reliable**. I treated latency like a real-world performance bug:
-- Measured delay with manual stopwatch tests
-- Tuned BLE characteristic settings
-- Refactored command parsing and state handling
+The project went beyond functional success. I focused on making the system **responsive and reliable**:
+- Timed BLE command-to-response cycles manually
+- Refined BLE characteristic updates
+- Removed redundant code in both firmware and app layers
 
 ---
 
 ## 🧰 Tech Stack
 
-- **Hardware:** ESP32, L298N Motor Driver, DC motors, battery pack
-- **Embedded Software:** C/C++ (Arduino core), BLE GATT server
-- **Mobile App:** Swift, CoreBluetooth
-- **Testing:** Manual response-time testing, Serial logging
+- **Microcontroller:** ESP32 (built-in BLE)
+- **Embedded Language:** C/C++ using Arduino core
+- **Mobile App:** Swift (CoreBluetooth)
+- **Motor Driver:** L298N dual H-bridge
+- **Power:** Battery pack for motors and logic
+- **Tools:** Serial Monitor for debugging, stopwatch-based latency testing
+
+---
+
+## 🚀 Getting Started
+
+### Hardware
+- ESP32 board
+- L298N Motor Driver
+- DC motors and chassis
+- Power supply (battery pack)
+- Jumper wires, breadboard
+
+### Software
+- Arduino IDE or PlatformIO
+- Xcode (iOS app)
+- UUID generator for BLE services/characteristics
+
+---
+
+## 📲 Usage
+
+1. Clone or download the project.
+2. Replace BLE UUIDs with your own (can be generated at [uuidgenerator.net](https://www.uuidgenerator.net/)).
+3. Ensure Bluetooth permissions are added in `Info.plist` for iOS.
+4. Upload the ESP32 firmware.
+5. Launch the iOS app and connect to your robot.
 
 ---
 
 ## 🎥 Demo
 
-▶️ [Watch the robot car in action](https://youtube.com/shorts/nL0a-RCpjPM?feature=share)
+▶️ [Watch the Robot Car in Action](https://youtube.com/shorts/nL0a-RCpjPM?feature=share)
 
 ---
 
-## 🤝 Open to Collaboration
+## 🤝 Contributions & Learning
 
-This project is open source and available for iOS devs
+This project is open source for anyone learning embedded development, Bluetooth integration, or mobile-hardware communication. Contributions and feedback are welcome.
 
+---
 
+## 📬 Contact
 
+**Andrew Muniz**  
+📧 andrewjosephmuniz@gmail.com  
+🌐 [](https://www.linkedin.com/in/andrewjosephmuniz/)
